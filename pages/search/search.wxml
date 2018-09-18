@@ -1,0 +1,7 @@
+<view class="search">
+<input placeholder="请输入搜索内容" bindinput="input"></input>
+<view bindtap="search">搜索</view>
+</view>
+<view wx:for="{{list}}" wx:key="{{item.id}}">
+<view bindtap="go" id="{{item.id}}">{{item.id}} {{item.desc}}  {{item.contact}}</view>
+</view>
